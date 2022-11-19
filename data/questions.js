@@ -11,7 +11,7 @@ export default {
                 "Verte",
                 "Pourpre"
             ],
-            "réponse": "Rouge",
+            "réponse": 1,
             "anecdote": "Le coquelicot se distingue par la couleur rouge de ses fleurs et par le fait qu'elle forme souvent des tapis colorés visibles de très loin."
         },
         {
