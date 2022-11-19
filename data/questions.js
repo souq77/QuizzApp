@@ -24,7 +24,7 @@ export default {
                 "Fauvette",
                 "Rossignol"
             ],
-            "réponse": "Chardonneret",
+            "réponse": 2,
             "anecdote": "Son bec est conique et pointu, spécialement adapté pour prélever les graines des plantes comme le chardon."
         },
         {
@@ -37,7 +37,7 @@ export default {
                 "90 km/h",
                 "110 km/h"
             ],
-            "réponse": "70 km/h",
+            "réponse": 1,
             "anecdote": "Le lièvre, du haut de ses 60 cm, est avec le lapin des neiges le plus grand lièvre d'Europe."
         },
         {
@@ -50,7 +50,7 @@ export default {
                 "Sa tête",
                 "Ses pattes"
             ],
-            "réponse": "Sa queue",
+            "réponse": 1,
             "anecdote": "Leurs caractéristiques générales sont celles des petits mammifères fouisseurs qui creusent et vivent dans des galeries souterraines."
         },
         {
@@ -63,7 +63,7 @@ export default {
                 "Coques",
                 "Vers blancs"
             ],
-            "réponse": "Vers blancs",
+            "réponse": 4,
             "anecdote": "Les vers blancs se transforment en nymphes. Au bout de 4 à 6 semaines, un coléoptère sortira du cocon."
         },
         {
@@ -76,7 +76,7 @@ export default {
                 "Corne",
                 "Calcaire"
             ],
-            "réponse": "Calcaire",
+            "réponse": 4,
             "anecdote": "La coquille en spirale de l'escargot de Bourgogne mesure jusqu'à 10 cm et est composée de calcaire."
         },
         {
@@ -89,7 +89,7 @@ export default {
                 "Renardelle",
                 "Renardeaude"
             ],
-            "réponse": "Renarde",
+            "réponse": 1,
             "anecdote": "Les caractéristiques générales des renards sont celles des Canidés, avec des nuances pour chaque espèce."
         },
         {
@@ -102,7 +102,7 @@ export default {
                 "178",
                 "32"
             ],
-            "réponse": "Aucune",
+            "réponse": 1,
             "anecdote": "Un ver de terre est un invertébré et ne possède donc aucune vertèbre."
         },
         {
@@ -115,7 +115,7 @@ export default {
                 "Musaraigne",
                 "Muscardin"
             ],
-            "réponse": "Mulot",
+            "réponse": 2,
             "anecdote": "Les musaraignes, ressemblant à une souris vues de loin, malgré leur nez pointu, sont aussi parfois qualifiées par erreur de mulots."
         },
         {
@@ -128,7 +128,7 @@ export default {
                 "Les pattes",
                 "La trompe"
             ],
-            "réponse": "La trompe",
+            "réponse": 4,
             "anecdote": "Grâce à cette trompe, la mouche bleue, pollinisatrice de fleurs à forte odeur, peut aspirer pollens et nectars."
         },
         {
@@ -141,7 +141,7 @@ export default {
                 "Avoine",
                 "Orge"
             ],
-            "réponse": "Avoine",
+            "réponse": 3,
             "anecdote": "L'avoine est la seule graminée à ne pas posséder de barbe, la barbe la plus longue se trouvant sur l'orge."
         },
         {
@@ -154,7 +154,7 @@ export default {
                 "Capucin",
                 "Jacobin"
             ],
-            "réponse": "Capucin",
+            "réponse": 3,
             "anecdote": "La robe brune du lièvre ressemble à la bure des moines capucins, d'où son nom."
         },
         {
@@ -167,7 +167,7 @@ export default {
                 "Lierre grimpant",
                 "Cactus"
             ],
-            "réponse": "Prunelles",
+            "réponse": 2,
             "anecdote": "Leurs fruits, très astringents et acides, sont mangés par les oiseaux et les insectes en automne."
         },
         {
@@ -180,7 +180,7 @@ export default {
                 "44",
                 "34"
             ],
-            "réponse": "24",
+            "réponse": 1,
             "anecdote": "La coccinelle des légumineuses possède des ailes oranges marquées de 24 points."
         },
         {
@@ -193,7 +193,7 @@ export default {
                 "Il est en vagues",
                 "Il est actif"
             ],
-            "réponse": "Il est stationnaire",
+            "réponse": 2,
             "anecdote": "Les ornithologues l'ont appelé ainsi à cause de son cri très aigu et plutôt désagréable."
         },
         {
@@ -206,7 +206,7 @@ export default {
                 "De 1 à 3 ans",
                 "6 mois"
             ],
-            "réponse": "De 3 à 7 ans",
+            "réponse": 1,
             "anecdote": "Les épines ont une fonction de protection, mais les manuels antiques imaginaient qu'elles servaient à récolter de la nourriture."
         },
         {
@@ -219,7 +219,7 @@ export default {
                 "320",
                 "180"
             ],
-            "réponse": "180",
+            "réponse": 4,
             "anecdote": "Le faucon crécerelle peut ainsi surveiller sa zone de chasse sans se déplacer."
         },
         {
@@ -232,7 +232,7 @@ export default {
                 "70 cm",
                 "130 cm"
             ],
-            "réponse": "70 cm",
+            "réponse": 3,
             "anecdote": "Par rapport à sa taille, aucun être vivant sur Terre n'est capable de sauter aussi haut."
         },
         {
@@ -245,7 +245,7 @@ export default {
                 "12 fourré",
                 "12 sylve"
             ],
-            "réponse": "12 cors",
+            "réponse": 2,
             "anecdote": "Le cerf perd ses bois en février et les nouveaux bois auront deux excroissances de plus."
         },
         {
@@ -258,7 +258,7 @@ export default {
                 "Le faisan",
                 "La loutre"
             ],
-            "réponse": "Le chat sauvage",
+            "réponse": 1,
             "anecdote": "Le chat sauvage a fait son apparition en Allemagne, après avoir disparu depuis 1912."
         },
         {
@@ -271,7 +271,7 @@ export default {
                 "Pivert",
                 "Coucou"
             ],
-            "réponse": "Coucou",
+            "réponse": 4,
             "anecdote": "Les petites fleurs jaunes de la primevère annoncent le printemps comme le fait le coucou, l'oiseau."
         },
         {
@@ -284,7 +284,7 @@ export default {
                 "De mai à juillet",
                 "De mai à septembre"
             ],
-            "réponse": "De mai à septembre",
+            "réponse": 4,
             "anecdote": "Cette plante médicinale, utilisée depuis l'Antiquité gréco-latine, est simplement appelée « camomille » en herboristerie."
         },
         {
@@ -297,7 +297,7 @@ export default {
                 "Le blaireau",
                 "Le putois"
             ],
-            "réponse": "L'hermine",
+            "réponse": 1,
             "anecdote": "Vers la mi-mars l'hermine commence sa mue pour retrouver sa couleur d'été juste avant la saison des amours."
         },
         {
@@ -310,7 +310,7 @@ export default {
                 "Muguet",
                 "Basilic"
             ],
-            "réponse": "Muguet",
+            "réponse": 3,
             "anecdote": "La confusion, assez fréquente, peut être très dangereuse et entraîner la mort."
         },
         {
@@ -323,7 +323,7 @@ export default {
                 "Par télépathie",
                 "Par infrarouge"
             ],
-            "réponse": "Par écho",
+            "réponse": 2,
             "anecdote": "La musaraigne lance des cris stridents qui sont renvoyés par des obstacles."
         },
         {
@@ -336,7 +336,7 @@ export default {
                 "La corneille mantelée",
                 "La pie bavarde"
             ],
-            "réponse": "Le corbeau freux",
+            "réponse": 1,
             "anecdote": "Le freux possède une robe tout à fait caractéristique, mais on peut cependant confondre les oisillons avec les corneilles."
         },
         {
@@ -349,7 +349,7 @@ export default {
                 "Le daim",
                 "Le cerf"
             ],
-            "réponse": "Le brocard",
+            "réponse": 1,
             "anecdote": "Tous les chevreuils appartiennent à la famille des cervidés. Les mâles portent des bois."
         },
         {
@@ -362,7 +362,7 @@ export default {
                 "Big dory",
                 "Colorado beetle"
             ],
-            "réponse": "Colorado beetle",
+            "réponse": 4,
             "anecdote": "Le doryphore de la pomme de terre est originaire de l'État du Colorado, aux États-Unis."
         },
         {
@@ -375,7 +375,7 @@ export default {
                 "Cétoine",
                 "Cerf-volant"
             ],
-            "réponse": "Scarabée zèbre",
+            "réponse": 1,
             "anecdote": "La première paire d'ailes, quelquefois très colorée, appelée élytres, forme la carapace de ces insectes."
         },
         {
@@ -388,7 +388,7 @@ export default {
                 "Afrique",
                 "Australie"
             ],
-            "réponse": "Amérique du Nord",
+            "réponse": 1,
             "anecdote": "Le raton laveur doit son nom à son habitude, plus ou moins réelle, de tremper ses aliments dans l'eau avant de les manger."
         }
     ]
