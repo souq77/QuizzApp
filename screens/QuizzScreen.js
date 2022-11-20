@@ -4,6 +4,7 @@ import SafeAreaView from 'react-native-safe-area-view'
 import questions from '../data/questions';
 import { useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons'
+import { LinearGradient } from 'expo-linear-gradient'
 
 const QuizzScreen = () => {
     const navigation = useNavigation();
@@ -68,55 +69,67 @@ const QuizzScreen = () => {
         }
     }, [index]);
     return (
+
+        <LinearGradient
+        // Dégradé de couleur
+        colors={['#1C2345', '#3c4780',]}
+        start={{x: 0, y:0.5}}
+        end={{x: 1, y:1}}
+        style={styles.background}
+        style={{ height: "100%",
+        alignItems: 'center' }}>
+
         <SafeAreaView>
             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 10 }}>
-                <Text>Quizz Challenge</Text>
-                <Pressable style={{ padding: 10, backgroundColor: "magenta", borderRadius: 20 }}>
-                    {<Text style={{ color: "white", textAlign: "center", fontWeight: "bold" }}>{counter}s</Text>}
+                <Text style={{ color: "#ffffff", fontSize:20  }}> Quizz Challenge</Text>
+                <Pressable style={{ padding: 10, backgroundColor: "#57D4F6", borderRadius: 10 }}>
+                    {<Text style={{ color: "white", textAlign: "center", fontWeight: "bold" }}>Temps restants : {counter}s</Text>}
                 </Pressable>
             </View>
             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginHorizontal: 10 }}>
-                <Text>Progression</Text>
-                <Text>({index + 1}/{data.questions.length})</Text>
+                <Text style={{ color: "#ffffff", fontSize:20  }}>Progression</Text>
+                <Text style={{ color: "#ffffff", fontSize:20 }}>( {index + 1} / {data.questions.length} )</Text>
             </View>
             <View
                 style={{
-                    backgroundColor: "white",
-                    width: "100%",
+                    backgroundColor: "#3c4780",
+                    width: "180%",
                     flexDirection: "row",
                     alignItems: "center",
                     height: 10,
                     borderRadius: 20,
                     justifyContent: "center",
                     marginTop: 20,
-                    marginLeft: 10
+                    marginLeft: 10,
+                    padding:7,
                 }}
             >
                 <Text
                     style={{
-                        backgroundColor:"#FFC0CB",
+                        backgroundColor:"#57D4F6",
                         borderRadius:12,
                         position:"absolute",
                         left:0,
                         height:10,
                         right:0,
                         width :`${progressBar}`+"%",
-                        marginTop:20
+                        marginTop:20,
+                        padding:7,
                     }}>
 
                 </Text>
             </View>
 
-            <View style={{ backgroundColor: "#F0F8FF", marginTop: 30, padding: 10, borderRadius: 6, borderRadius: 20 }}>
-                <Text style={{ fontSize: 18, fontWeight: "bold" }}>{currentQuestion?.question}</Text>
-                <View style={{ marginTop: 12 }}>
+            <View style={{ marginTop: 10, padding: 10, borderRadius: 6, borderRadius: 20 }}>
+                <Text style={{ fontSize: 22, fontWeight: "bold", color: "#ffffff"  }}>{currentQuestion?.question}</Text>
+                <View style={{ marginTop: 12, borderRadius:20, padding:10}}>
                     {currentQuestion?.propositions.map((item, index) => (
-                        <Pressable onPress={() => selectedAnswerIndex === null && setSelectedAnswerIndex(index)}
-                            style={
+                        <Pressable style={{ color: "#ffffff" }} onPress={() => selectedAnswerIndex === null && setSelectedAnswerIndex(index)}
+                            style={ 
                                 selectedAnswerIndex === index && index === currentQuestion.réponse - 1
-                                    ? { flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "#00FFF", backgroundColor: "green", marginVertical: 10 }
+                                    ? { flexDirection: "row", alignItems: "center", borderWidth: 0.5, backgroundColor: "green", marginVertical: 10 }
                                     : selectedAnswerIndex !== null && selectedAnswerIndex === index ?
-                                        { flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "#00FFF", backgroundColor: "red", marginVertical: 10 } :
+                                        { flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "#00FFF", backgroundColor: "red", marginVertical: 10} :
                                         { flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "#00FFF", marginVertical: 10 }
                             }>
                             {selectedAnswerIndex === index && index === currentQuestion?.réponse - 1 ? (
@@ -130,14 +143,14 @@ const QuizzScreen = () => {
                     ))}
                 </View>
             </View>
-            <Text idstyle={{ color: "black", visibility: 'hidden' }}>{data.questions[index]?.anecdote}</Text>
+            <Text idstyle={{ color: "#ffffff", visibility: 'hidden' }}>{data.questions[index]?.anecdote}</Text>
 
             <View style={answerStatus === null ? null :
-                { marginTop: 45, backgroundColor: "#F0F8FF", padding: 10, borderRadius: 7, height: 120 }}>
+                { marginTop: 45, backgroundColor: "#57D4F6", padding: 10, borderRadius: 7, height: 120 }}>
                 {answerStatus === null ? null : (
                     <Text
                         style={answerStatus === null ? null :
-                            { fontSize: 17, textAlign: "center", fontWeight: "bold" }}
+                            { fontSize: 17, textAlign: "center", fontWeight: "bold", color:"#ffffff" }}
                     >{!!answerStatus ? "Mauvaise reponse" : "Bonne reponse"}</Text>
                 )}
                 {index + 1 >= data.questions.length ? (
@@ -182,6 +195,7 @@ const QuizzScreen = () => {
 
             </View>
         </SafeAreaView>
+        </LinearGradient>
     )
 }
 
