@@ -23,19 +23,15 @@ const RulesScreen = () => {
                 <View style={{ padding: 10,  marginTop: 15 }}>
 
                     <View style={{ flexDirection: "row", alignItems: "center", marginVetical: 5, padding:10, marginBottom:20, backgroundColor: "#3c4780", borderRadius: 6, borderWidth: 3, borderColor: "#57D4F6" }}>
-                        <Text style={{ color: "#ffffff" }}>°</Text>
                         <Text style={{ marginLeft: 4, color: "#ffffff", fontSize: 18, fontWeight: "500" }}>Pour chaque bonne reponse vous gagnez 5 points</Text>
                     </View>
                     <View style={{ flexDirection: "row", alignItems: "center", marginVetical: 5, paddingBottom:10, paddingTop:10, paddingLeft:10, marginBottom:20, backgroundColor: "#3c4780", borderRadius: 6, borderWidth: 3, borderColor: "#57D4F6"}}>
-                        <Text style={{ color: "white" }}>°</Text>
                         <Text style={{ marginLeft: 4, color: "#ffffff", fontSize: 18, fontWeight: "500" }}>Les mauvaises reponses ne vous penalisent pas</Text>
                     </View>
                     <View style={{ flexDirection: "row", alignItems: "center", marginVetical: 5, paddingBottom:10,  paddingTop:10, paddingLeft:10, marginBottom:20, backgroundColor: "#3c4780", borderRadius: 6, borderWidth: 3, borderColor: "#57D4F6" }}>
-                        <Text style={{ color: "white" }}>°</Text>
                         <Text style={{ marginLeft: 4, color: "#ffffff", fontSize: 18, fontWeight: "500" }}>Vous avez 15s pour repondre a chaque question</Text>
                     </View>
                     <View style={{ flexDirection: "row", alignItems: "center", marginVetical: 5, paddingBottom:10 ,  paddingTop:10, paddingLeft:10, marginBottom:20, backgroundColor: "#3c4780", borderRadius: 6, borderWidth: 3, borderColor: "#57D4F6" }}>
-                        <Text style={{ color: "white" }}>°</Text>
                         <Text style={{ marginLeft: 4, color: "#ffffff", fontSize: 17, fontWeight: "500" }}>Vous devez repondre à toutes les questions</Text>
                     </View> 
                                  

@@ -1,12 +1,12 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
-import React, { useEffect, useState } from 'react'
-import SafeAreaView from 'react-native-safe-area-view'
-import questions from '../data/questions';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import SafeAreaView from 'react-native-safe-area-view';
+import questions from '../data/questions/biologieQuestions';
 import { useNavigation } from '@react-navigation/native';
-import { AntDesign } from '@expo/vector-icons'
-import { LinearGradient } from 'expo-linear-gradient'
+import { AntDesign } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
-const QuizzScreen = () => {
+const BiologyScreen = () => {
     const navigation = useNavigation();
     const data = questions;
     const [points, setPoints] = useState(0);
@@ -81,7 +81,7 @@ const QuizzScreen = () => {
 
         <SafeAreaView>
             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 10 }}>
-                <Text style={{ color: "#ffffff", fontSize:20  }}> Quizz Challenge</Text>
+                <Text style={{ color: "#ffffff", fontSize:20  }}> Thème Biologie</Text>
                 <Pressable style={{ padding: 10, backgroundColor: "#57D4F6", borderRadius: 10 }}>
                     {<Text style={{ color: "white", textAlign: "center", fontWeight: "bold" }}>Temps restants : {counter}s</Text>}
                 </Pressable>
@@ -192,13 +192,12 @@ const QuizzScreen = () => {
                     </Pressable>
                 )}
 
-
             </View>
         </SafeAreaView>
         </LinearGradient>
     )
 }
 
-export default QuizzScreen
+export default BiologyScreen
 
 const styles = StyleSheet.create({})
