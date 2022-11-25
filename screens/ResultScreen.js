@@ -23,10 +23,10 @@ const ResultScreen = () => {
             <Pressable style={{ backgroundColor: "white", height: 200, borderRadius: 7, marginTop: 20 }}>
                 <Text style={{ color: "magenta", fontSize: 15, fontWeight: "500", textAlign: "center", marginTop: 8 }}>Votre score : </Text>
                 <FlatList data={route.params.answers} renderItem={({ item, i }) =>
-                    <View style={{ alignItems: "center", justifyContent: "center", margin: 10, alignItems: "center" }}>
+                    <View style={{  }}>
                         <Text>{item.question}</Text>
                         {item.answer !== true ? (
-                            <AntDesign style={{ marginLeft:5}}name='checkcircle' size={20} color="green" />
+                            <AntDesign style={{}} name='checkcircle' size={20} color="green" />
                         ) : (
                             <AntDesign name='closecircle' size={20} color="red" />
                         )}
@@ -35,6 +35,7 @@ const ResultScreen = () => {
 
                 </FlatList>
             </Pressable>
+            <Text style={{ textAlign : "center",marginTop: 30,fontSize: 50, fontWeight: "bold", color: "purple" }}>{route.params.points} Pts</Text>
         </SafeAreaView>
     )
 }

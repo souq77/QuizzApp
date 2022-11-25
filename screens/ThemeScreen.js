@@ -23,14 +23,14 @@ const ThemeScreen = () => {
         </View>
         <View style={{ flexDirection: "row", alignContent:"space-between", margin:30 }}>
             <View>
-                <Pressable onPress={() => navigation.navigate('Biology')} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin:15 }}> 
+                <Pressable onPress={() => navigation.navigate('QuestionsScreen', {theme:'Biology'})} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin:15 }}> 
                 <Image style={{ width:70, height:70 }}  source={require('../assets/icons/biologique.png')} /> 
                 </Pressable>
                 <Text style={{color:"white", fontWeight:"600", textAlign:"center"}}>Biologie</Text>
                 
             </View>
             <View>
-                <Pressable onPress={() => navigation.navigate('Celebrity')} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15 }}>
+                <Pressable onPress={() => navigation.navigate('QuestionsScreen', {theme:'Celebrity'})} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15 }}>
                 <Image style={{ width:70, height:70 }}  source={require('../assets/icons/famous.png')} /> 
                 </Pressable>
                 <Text style={{color:"white", fontWeight:"600", textAlign:"center"}}>Célébrités</Text>
@@ -39,13 +39,13 @@ const ThemeScreen = () => {
         </View>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
             <View>
-                <Pressable onPress={() => navigation.navigate('Gastronomy')} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15 }}>
+                <Pressable onPress={() => navigation.navigate('QuestionsScreen', {theme:'Gastronomy'})} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15 }}>
                 <Image style={{ width:70, height:70 }}  source={require('../assets/icons/tray.png')} /> 
                 </Pressable>
                 <Text style={{color:"white", fontWeight:"600", textAlign:"center"}}>Gastronomie</Text>
             </View>
             <View>
-                <Pressable onPress={() => navigation.navigate('SuperHeros')} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15}}>
+                <Pressable onPress={() => navigation.navigate('QuestionsScreen', {theme:'SuperHeros'})} style={{ backgroundColor: "#57D4F6", padding: 40, width:140, borderRadius: 7, margin: 15}}>
                 <Image style={{ width:70, height:70 }}  source={require('../assets/icons/leader.png')} /> 
                 </Pressable>
                 <Text style={{color:"white", fontWeight:"600", textAlign:"center"}}>Super Héros</Text>
