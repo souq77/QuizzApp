@@ -4,6 +4,8 @@ import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient'
 
 
+
+
 const RulesScreen = () => {
     const navigation = useNavigation();
     return (

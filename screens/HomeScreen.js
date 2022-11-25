@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View, Image, Pressable, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable, Button, Switch } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import translations from '../data/translation/translations';
 import { I18n } from 'i18n-js';
+
 
 
 const HomeScreen = () => {
@@ -56,6 +57,7 @@ const HomeScreen = () => {
                 }}
                     title={i18n.translate('version_francaise')} />
             </View>
+        
             <View>
                 <Text style={{ color: "#ffffff", fontSize: 40, marginTop: 140 }}> QUIZ APP</Text>
             </View>
@@ -64,12 +66,13 @@ const HomeScreen = () => {
             <Pressable onPress={() => navigation.navigate('Theme')} style={{ backgroundColor: "#57D4F6", padding: 14, width: 180, borderRadius: 15, marginLeft: "auto", marginRight: "auto", marginTop: 20 }}>
                 <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>{i18n.t('Commencer_la_partie')}</Text>
             </Pressable>
+        
             <Pressable onPress={() => navigation.navigate('Rules')} style={{ backgroundColor: "#57D4F6", padding: 14, width: 180, borderRadius: 15, marginLeft: "auto", marginRight: "auto", marginTop: 20 }}>
                 <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>{i18n.t('Regles_du_jeu')}</Text>
             </Pressable>
             <Pressable onPress={() => navigation.navigate('Setting')} style={{ backgroundColor: "#57D4F6", padding: 14, width: 180, borderRadius: 15, marginLeft: "auto", marginRight: "auto", marginTop: 20 }}>
                 <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>{i18n.t('Regles_du_jeu')}</Text>
-            </Pressable>
+            </Pressable>        
 
         </LinearGradient>
 

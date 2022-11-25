@@ -127,7 +127,7 @@ const QuestionsScreen = () => {
                 <View
                     style={{
                         backgroundColor: "#3c4780",
-                        width: "180%",
+                        width: "100%",
                         flexDirection: "row",
                         alignItems: "center",
                         height: 10,
@@ -161,9 +161,9 @@ const QuestionsScreen = () => {
                             <Pressable style={{ color: "white" }} onPress={() => selectedAnswerIndex === null && setSelectedAnswerIndex(index)}
                                 style={
                                     selectedAnswerIndex === index && index === currentQuestion.réponse - 1
-                                        ? { borderRadius: " 30px", color: "white", flexDirection: "row", alignItems: "center", borderWidth: 0.5, backgroundColor: "green", marginVertical: 10 }
+                                        ? { borderRadius: " 30px", color: "white", flexDirection: "row", alignItems: "center", borderWidth: 4, borderColor:"green", marginVertical: 10 }
                                         : selectedAnswerIndex !== null && selectedAnswerIndex === index ?
-                                            { borderRadius: " 30px", flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "white", backgroundColor: "red", marginVertical: 10 } :
+                                            { borderRadius: " 30px", flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor:"green", borderWidth: 4, borderColor:"red", marginVertical: 10 } :
                                             { borderRadius: " 30px", flexDirection: "row", alignItems: "center", borderWidth: 0.5, borderColor: "white", marginVertical: 10 }
                                 }>
                                 {selectedAnswerIndex === index && index === currentQuestion?.réponse - 1 ? (
@@ -177,10 +177,11 @@ const QuestionsScreen = () => {
                         ))}
                     </View>
                 </View>
-                <Text style={{ color: "white", display:showAnecdote == true ? 'block' : 'none' }}>{data.questions[index]?.anecdote}</Text>
+                <Text style={{ color: "white", padding:5, fontSize:20, display:showAnecdote == true ? 'block' : 'none'}}> Réponse :</Text>
+                <Text style={{ color: "white", padding:10, display:showAnecdote == true ? 'block' : 'none' }}>{data.questions[index]?.anecdote}</Text>
 
                 <View style={answerStatus === null ? null :
-                    { marginTop: 45, backgroundColor: "#57D4F6", padding: 10, borderRadius: 7, height: 120 }}>
+                    { marginTop: 20, backgroundColor: "#57D4F6", padding: 10, borderRadius: 7, height: 120 }}>
                     {answerStatus === null ? null : (
                         <Text
                             style={answerStatus === null ? null :
