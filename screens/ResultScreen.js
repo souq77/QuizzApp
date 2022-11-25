@@ -33,7 +33,7 @@ const ResultScreen = () => {
             </View>
             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 10 }}>
                 <Text style={{ color: "#ffffff", fontSize: 20 }}>Questions repondus</Text>
-                <Text style={{ color: "#ffffff", fontSize: 20 }}> (30 / 30)</Text>
+                <Text style={{ color: "#ffffff", fontSize: 20 }}> (10 / 10)</Text>
             </View>
 
             <Pressable style={{ padding:10, alignItems: "center", marginBottom:20, marginTop:20, backgroundColor: "#3c4780", borderRadius: 6, borderWidth: 3, borderColor: "#57D4F6", height: 300}}>

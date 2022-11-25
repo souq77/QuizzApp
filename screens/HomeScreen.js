@@ -25,7 +25,7 @@ const HomeScreen = () => {
     };
     const i18n = new I18n();
     i18n.translations = translations;
-    i18n.locale='en';
+    i18n.locale='fr';
    
     const [language, setLanguage] = useState('fr');
 
@@ -70,9 +70,7 @@ const HomeScreen = () => {
             <Pressable onPress={() => navigation.navigate('Rules')} style={{ backgroundColor: "#57D4F6", padding: 14, width: 180, borderRadius: 15, marginLeft: "auto", marginRight: "auto", marginTop: 20 }}>
                 <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>{i18n.t('Regles_du_jeu')}</Text>
             </Pressable>
-            <Pressable onPress={() => navigation.navigate('Setting')} style={{ backgroundColor: "#57D4F6", padding: 14, width: 180, borderRadius: 15, marginLeft: "auto", marginRight: "auto", marginTop: 20 }}>
-                <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>{i18n.t('Regles_du_jeu')}</Text>
-            </Pressable>        
+                
 
         </LinearGradient>
 
